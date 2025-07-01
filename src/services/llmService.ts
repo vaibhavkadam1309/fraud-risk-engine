@@ -13,7 +13,7 @@ export async function generateExplanation(score: number, riskLevel: string, reas
         if (cached) return cached;
     }
     catch (err) {
-        console.warn('⚠️ Redis GET failed:', err);
+        console.warn('Redis GET failed:', err);
     }
     const prompt = `
                 Explain why the following transaction is rated as ${riskLevel} risk with a score of ${score}:
@@ -32,7 +32,6 @@ export async function generateExplanation(score: number, riskLevel: string, reas
         });
         return text
     } catch (err) {
-        console.log(err)
         return prompt;
     }
 }
