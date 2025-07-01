@@ -14,7 +14,6 @@ This project is a backend microservice that evaluates the risk level of a paymen
 - ✅ Redis-based prompt caching with TTL
 - ✅ Fallback to direct LLM call if Redis is down
 - ✅ Fraud statistics endpoint (`/fraud-stats`)
-- 🧪 Easily testa
 
 
 
@@ -32,7 +31,7 @@ This project is a backend microservice that evaluates the risk level of a paymen
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/<your-username>/fraud-risk-engine.git
+git clone https://github.com/vaibhavkadam1309/fraud-risk-engine.git 
 cd fraud-risk-engine
 
 ### 2️⃣ Install Dependencies
@@ -41,7 +40,7 @@ npm install
 
 ### 3️⃣ Add Environment Variables
 
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 REDIS_URL=redis://localhost:6379
 
 ### 4️⃣ Start Redis (Optional if using local Redis)
