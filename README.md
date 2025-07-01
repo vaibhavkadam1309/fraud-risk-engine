@@ -53,3 +53,6 @@ docker run -d --name redis -p 6379:6379 redis
 npm run dev
 # or
 npx ts-node src/index.ts
+
+
+[![Swagger Docs](https://img.shields.io/badge/API-Swagger-blue)](http://localhost:3000/api-docs)
