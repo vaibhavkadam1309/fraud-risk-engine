@@ -6,6 +6,9 @@
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true
   }
 }

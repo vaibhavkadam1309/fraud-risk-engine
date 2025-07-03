@@ -1,5 +1,6 @@
 import swaggerJSDoc from 'swagger-jsdoc';
 
+const isProd = process.env.NODE_ENV === 'production';
 
 export const swaggerOptions: swaggerJSDoc.Options = {
   definition: {
@@ -10,7 +11,7 @@ export const swaggerOptions: swaggerJSDoc.Options = {
       description: 'API to evaluate fraud risk and return risk level and LLM explanation',
     },
   },
-  apis: ['./src/routes/*.ts'], // where Swagger looks for annotations
+  apis: [ isProd ? './dist/routes/*.js' : './src/routes/*.ts'], // where Swagger looks for annotations
 };
 
 export const swaggerSpec = swaggerJSDoc(swaggerOptions);
